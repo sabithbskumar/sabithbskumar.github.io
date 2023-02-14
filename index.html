@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#000">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#222222">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    <title>Real OS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <div id="boot" class="fill">
+      <canvas id="boot-animation" class="fill"></canvas>
+    </div>
+    <div id="lockscreen" class="lockscreen fill hidden no-select">
+      <div class="lockscreen-gadgets">
+        <span id="lockscreen-time">04:21 pm</span>
+        <span id="lockscreen-date">Mon, 11 Sep</span>
+      </div>
+      <div class="lockscreen-user-profile p-hide">
+        <div class="lockscreen-user-avatar"><img src="images/login-user.png" /></div>
+        <div class="lockscreen-user-name">Sabith</div>
+        <button class="lockscreen-login-button" onclick="unlock(true)">Login</button>
+      </div>
+      <div class="lockscreen-swipe-text l-hide"><span>swipe</span></div>
+    </div>
+    <div id="main" class="fill hidden">
+      <div id="desktop" class="desktop fh" onclick="document.getElementById('start-button').checked=false;">
+        <div class="app-drawer fh no-select">
+          <div class="page"></div>
+        </div>
+        <div class="active-apps invisible" onclick="recentAppSwitcher()"></div>
+      </div>
+      <div id="navbar" class="no-select">
+        <div id="taskbar" class="taskbar p-hide">
+          <input id="start-button" type="checkbox" />
+          <div class="start-menu">
+            <span>Apps</span>
+            <div class="app-list"></div>
+          </div>
+          <label for="start-button" class="slogo"></label>
+          <button class="recentbutton" onclick="recentAppSwitcher()"><span class="recentlogo"></span></button>
+          <div id="active-apps"></div>
+        </div>
+        <div class="nav-buttons l-hide">
+          <button onclick="recentAppSwitcher()"><span class="recent-btn"></span></button>
+          <button onclick="hideDesktop()"><span class="home-btn"></span></button>
+          <button onclick="hideDesktop()"><span class="back-btn"></span></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

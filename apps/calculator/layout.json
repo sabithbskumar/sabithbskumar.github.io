@@ -1,0 +1,142 @@
+{
+  "version": "0.0.1",
+  "name": "Calculator",
+  "schema": "0.1",
+  "title": "Calculator",
+  "width": "15rem",
+  "height": "22rem",
+  "body" : [
+    {
+      "element": "div",
+      "attributes": {
+        "class": "calculator-body no-select"
+      },
+      "body" : [
+        {
+          "element": "div",
+          "attributes": {
+            "class": "calculator-container"
+          },
+          "body": [
+            {
+              "element": "div",
+              "attributes": {
+                "class": "calculator-display"
+              },
+              "body": [
+                {
+                  "element": "input",
+                  "attributes": {
+                    "type": "text",
+                    "value": "0"
+                  }
+                }
+              ]
+            },
+            {
+              "element": "div",
+              "attributes": {"class": "calculator-buttons"},
+              "body": [
+                {
+                  "element": "div",
+                  "attributes": { "class": "calculator btn" },
+                  "body": [{ "element": "button", "text": "C", "attributes": { "data-function": "clear"} }]
+                },
+                {
+                  "element": "div",
+                  "attributes": { "class": "calculator btn" },
+                  "body": [{ "element": "button", "text": "%", "attributes": { "data-function": "mod"} }]
+                },
+                {
+                  "element": "div",
+                  "attributes": { "class": "calculator btn" },
+                  "body": [{ "element": "button", "text": "<", "attributes": { "data-function": "backspace"} }]
+                },
+                {
+                  "element": "div",
+                  "attributes": { "class": "calculator btn" },
+                  "body": [{ "element": "button", "text": "/", "attributes": { "data-function": "div"} }]
+                },
+                {
+                  "element": "div",
+                  "attributes": { "class": "calculator btn" },
+                  "body": [{ "element": "button", "text": "7", "attributes": { "data-function": "num-seven"} }]
+                },
+                {
+                  "element": "div",
+                  "attributes": { "class": "calculator btn" },
+                  "body": [{ "element": "button", "text": "8", "attributes": { "data-function": "num-eight"} }]
+                },
+                {
+                  "element": "div",
+                  "attributes": { "class": "calculator btn" },
+                  "body": [{ "element": "button", "text": "9", "attributes": { "data-function": "num-nine"} }]
+                },
+                {
+                  "element": "div",
+                  "attributes": { "class": "calculator btn" },
+                  "body": [{ "element": "button", "text": "*", "attributes": { "data-function": "mul"} }]
+                },
+                {
+                  "element": "div",
+                  "attributes": { "class": "calculator btn" },
+                  "body": [{ "element": "button", "text": "4", "attributes": { "data-function": "num-four"} }]
+                },
+                {
+                  "element": "div",
+                  "attributes": { "class": "calculator btn" },
+                  "body": [{ "element": "button", "text": "5", "attributes": { "data-function": "num-five"} }]
+                },
+                {
+                  "element": "div",
+                  "attributes": { "class": "calculator btn" },
+                  "body": [{ "element": "button", "text": "6", "attributes": { "data-function": "num-six"} }]
+                },
+                {
+                  "element": "div",
+                  "attributes": { "class": "calculator btn" },
+                  "body": [{ "element": "button", "text": "-", "attributes": { "data-function": "sub"} }]
+                },
+                {
+                  "element": "div",
+                  "attributes": { "class": "calculator btn" },
+                  "body": [{ "element": "button", "text": "1", "attributes": { "data-function": "num-one"} }]
+                },
+                {
+                  "element": "div",
+                  "attributes": { "class": "calculator btn" },
+                  "body": [{ "element": "button", "text": "2", "attributes": { "data-function": "num-two"} }]
+                },
+                {
+                  "element": "div",
+                  "attributes": { "class": "calculator btn" },
+                  "body": [{ "element": "button", "text": "3", "attributes": { "data-function": "num-three"} }]
+                },
+                {
+                  "element": "div",
+                  "attributes": { "class": "calculator btn" },
+                  "body": [{ "element": "button", "text": "+", "attributes": { "data-function": "add"} }]
+                },
+                {
+                  "element": "div",
+                  "attributes": { "class": "calculator btn span-2" },
+                  "body": [{ "element": "button", "text": "0", "attributes": { "data-function": "num-zero"} }]
+                },
+                {
+                  "element": "div",
+                  "attributes": { "class": "calculator btn" },
+                  "body": [{ "element": "button", "text": ".", "attributes": { "data-function": "decimal"} }]
+                },
+                {
+                  "element": "div",
+                  "attributes": { "class": "calculator btn" },
+                  "body": [{ "element": "button", "text": "=", "attributes": { "data-function": "solve"} }]
+                }
+              ]
+            }
+          ]
+         }
+        ]
+      }
+  ]
+}

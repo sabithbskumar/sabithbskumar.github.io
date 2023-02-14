@@ -1,0 +1,35 @@
+{
+  "version": "0.0.1",
+  "name": "AboutMe",
+  "schema": "0.1",
+  "title": "About Me",
+  "width": "18rem",
+  "height": "22rem",
+  "body": [
+    {
+      "element": "div",
+      "attributes": { "class": "about-container" },
+      "body": [
+        { "element": "h1", "text": "Hi, I am \nSabith B S Kumar" },
+        { "element": "br" },
+        { "element": "h2", "text": "I'm a self taught programmer" },
+        { "element": "br" },
+        { "element": "h3", "text": "These are my skills that I developed over time" },
+        { "element": "ul", "body": [
+          { "element": "li", "text": "Python" },
+          { "element": "li", "text": "Javascript" },
+          { "element": "li", "text": "HTML" },
+          { "element": "li", "text": "CSS" },
+          { "element": "li", "text": "PHP" },
+          { "element": "li", "text": "SQL" },
+          { "element": "li", "text": "Node.js" },
+          { "element": "li", "text": "Java" },
+          { "element": "li", "text": "C" }
+        ] },
+        { "element": "br" },
+        { "element": "h3", "text": "This page isn't completed yet.\nThere will be a lot more additions in the future." }
+      ]
+    }
+  ]
+}
+ 

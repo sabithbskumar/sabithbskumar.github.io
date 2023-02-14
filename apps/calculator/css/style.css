@@ -1,0 +1,50 @@
+.calculator-body {
+  height: 100%;
+  font-size: 1.5rem;
+}
+.calculator-container {
+  height: 100%;
+  max-height: 100%;
+}
+.calculator-display {
+  height: 25%;
+  max-height: 25%;
+}
+.calculator-display input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: #222;
+  border: none;
+  color: #eee;
+  padding: 1rem 2rem;
+  text-align: right;
+}
+.calculator-buttons {
+  height: 75%;
+  max-height: 75%;
+}
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(5, 20%);
+  border: .1rem solid #000;
+}
+.calculator.btn.span-2 { grid-area: auto / span 2; }
+.calculator.btn button {
+  width: 100%;
+  height: 100%;
+  background: #111;
+  color: #fff;
+  border: .1rem solid #000;
+  display: block;
+}
+.calculator.btn button:active {
+  background: #333;
+}
+
+@media (orientation: landscape) {
+  .app.win-normal .calculator-buttons {
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "version": "0.0.1",
+  "name": "Camera",
+  "schema": "0.1",
+  "title": "Camera",
+  "width": "15rem",
+  "height": "22rem",
+  "body": [
+    {
+      "element": "div",
+      "attributes": { "class": "camera-container" },
+      "body": [
+        {
+          "element": "video",
+          "attributes": {
+            "class": "camera-view"
+          }
+        },
+        {
+          "element": "div",
+          "attributes": { "class": "camera-controls"},
+          "body": [
+            {
+              "element": "button",
+              "attributes": { "class": "camera-download" }
+            },
+            {
+              "element": "button",
+              "attributes": { "class": "camera-capture" }
+            },
+            {
+              "element": "button",
+              "attributes": { "class": "camera-swap" }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

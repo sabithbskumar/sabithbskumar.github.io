@@ -1,0 +1,24 @@
+{
+  "shortcuts": [
+    {
+      "name": "Restart",
+      "icon": "images/ic_launcher.png",
+      "onclick": "location.reload()"
+    },
+    {
+      "name": "Lock",
+      "icon": "images/ic_launcher.png",
+      "onclick": "initLogin(true)"
+    },
+    {
+      "name": "Fullscreen",
+      "icon": "images/ic_launcher.png",
+      "onclick": "document.body.requestFullscreen();"
+    }
+  ],
+  "apps": {
+    "calculator": "Calculator",
+    "camera": "Camera",
+    "about": "About Me"
+  }
+}
