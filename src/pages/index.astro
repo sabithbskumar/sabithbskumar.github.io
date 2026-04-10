@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import "../styles/global.css";
 ---
 
@@ -24,7 +25,15 @@ import "../styles/global.css";
     <meta name="generator" content={Astro.generator}>
     <title>Sabith | Web Developer</title>
   </head>
-  <body>
-    <h1>Sabith | Web Developer</h1>
+  <body
+    class="flex size-full items-center justify-center bg-white dark:bg-black"
+  >
+    <Image
+      src="/favicon.svg"
+      alt="logo"
+      width={240}
+      height={240}
+      loading="eager"
+    />
   </body>
 </html>
