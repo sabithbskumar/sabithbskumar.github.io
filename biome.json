@@ -16,7 +16,16 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "nursery": {
+        "useSortedClasses": {
+          "level": "error",
+          "options": {
+            "attributes": ["class:list"],
+            "functions": ["clsx", "cva", "tw", "tw.*"]
+          }
+        }
+      }
     }
   },
   "javascript": {
@@ -28,6 +37,11 @@
     "experimentalFullSupportEnabled": true,
     "formatter": {
       "enabled": true
+    }
+  },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
     }
   },
   "assist": {

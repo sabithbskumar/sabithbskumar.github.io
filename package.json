@@ -23,6 +23,7 @@
     "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.11"
+    "@biomejs/biome": "2.4.11",
+    "@catppuccin/tailwindcss": "^1.0.0"
   }
 }

@@ -1,5 +1,4 @@
 ---
-import { Image } from "astro:assets";
 import "../styles/global.css";
 ---
 
@@ -21,19 +20,50 @@ import "../styles/global.css";
     >
     <meta name="apple-mobile-web-app-title" content="Sabith | Web Developer">
     <link rel="manifest" href="/site.webmanifest?v=20260410">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content={Astro.generator}>
-    <title>Sabith | Web Developer</title>
+    <title>Sabith | Software Engineer | Frontend Developer</title>
   </head>
-  <body
-    class="flex size-full items-center justify-center bg-white dark:bg-black"
-  >
-    <Image
-      src="/favicon.svg"
-      alt="logo"
-      width={240}
-      height={240}
-      loading="eager"
-    />
+  <body class="bg-ctp-crust text-ctp-text transition-colors">
+    <main class="h-full">
+      <div class="pointer-events-none absolute inset-0 overflow-hidden -z-10">
+        <div class="container mx-auto size-full relative">
+          <div
+            class:list={[
+              "not-supports-mask-image:hidden",
+              "aspect-64/29 max-md:scale-75 min-h-70 absolute right-0",
+              "h-[80dvh] not-supports-[height:1dvh]:h-[80vh]",
+              "bg-linear-to-b from-ctp-surface1 from-0% via-ctp-surface1 via-44% to-ctp-crust to-82% transition-colors",
+              "mask-[url(../assets/hero-bg.png)] mask-no-repeat mask-cover",
+              "transform-[translate(60%,4dvh)]",
+              "not-supports-[height:1dvh]:transform-[translate(60%,4vh)]",
+              "md:transform-[translate(48%,6dvh)]",
+              "not-supports-[height:1dvh]:md:transform-[translate(48%,6vh)]",
+              "lg:transform-[translate(45%,10dvh)]",
+              "not-supports-[height:1dvh]:lg:transform-[translate(45%,10vh)]"
+          ]}
+          ></div>
+        </div>
+      </div>
+      <div
+        class:list={[
+          "container px-4 md:px-12 lg:24 mx-auto pt-[40dvh] md:pt-[45dvh]",
+          "not-supports-[height:1dvh]:pt-[40vh] not-supports-[height:1dvh]:md:pt-[45vh]"
+        ]}
+      >
+        <h2>
+          <span class="text-4xl md:text-[2.5rem] lg:text-5xl font-extrabold"
+            >Hi,</span
+          ><br>
+          <span class="text-5xl md:text-6xl lg:text-8xl font-extrabold"
+            >I'm Sabith</span
+          >
+        </h2>
+        <h2></h2>
+        <h3 class="md:text-3xl lg:text-4xl font-medium">
+          Software Engineer | Frontend Developer
+        </h3>
+      </div>
+    </main>
   </body>
 </html>
